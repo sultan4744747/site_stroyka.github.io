@@ -46,13 +46,20 @@
       }
 
       .logo {
-        font-size: 30px;
-        font-weight: bold;
-        
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-      }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+
+.logo img {
+  width: 40px;   /* размер аватарки */
+  height: 40px;
+  border-radius: 50%; /* делает круглым */
+  object-fit: cover;  /* чтобы не растягивалась */
+}
 
       .nav a {
         margin: 0 10px;
@@ -586,7 +593,10 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
-          <div class="logo">RemPro</div>
+          <div class="logo">
+            <img src = "logo.jpg" alt ="RemPro"/>
+            <span>Ремпро</span>
+          </div>
           <nav class="nav"></nav>
           <!--<a href="tel:+79991234567" class="phone">+7 (999) 123-45-67</a>  В самый низ-->
           
@@ -659,7 +669,7 @@
             
             <!-- Скандинавский -->
             <div class="style-card-rem">
-                <div class="card-image-rem" style="background-image: url('лофт.jpeg')"></div>
+                <div class="card-image-rem" style="background-image: url('скандинафский.jpeg')"></div>
                 <div class="card-title-rem">Скандинавский</div>
                 <div class="card-desc-rem">Светлый, минималистичный стиль с натуральными материалами. Визуально расширяет пространство панельных квартир.</div>
             </div>
@@ -1032,9 +1042,9 @@
         <div class="footer-content">
             <div class="footer-info">
                 <h3>Контакты</h3>
-                <p>📞 Телефон: <a href="tel:+79998887766">+7 (999) 888-77-66</a></p>
+                <p>📞 Телефон: <a href="tel:+79534970398">+7 (999) 888-77-66</a></p>
                 <p>✉️ Email: <a href="mailto:info@site.ru">info@site.ru</a></p>
-                <p>💬 Telegram: <a href="https://t.me/your_username" target="_blank">@your_username</a></p>
+                <p>💬 Telegram: <a href="https://t.me/N13NFC" target="_blank">@N13NFC</a></p>
             </div>
             <!-- ✅ Кнопка теперь в подвале -->
             <div style="margin-top:20px;">
@@ -1072,3 +1082,4 @@
     </footer>
   </body>
 </html>
+
